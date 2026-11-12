@@ -36,22 +36,44 @@
          `;
           }
 function discoverAfghanistan() {
-    document.getElementById("afghan-discovery").innerHTML = `
-        <h3>Wait... carrots have Afghan roots?! 🥕</h3>
+    
+function startAdventure() {
+  document.getElementById("adventure-message").innerHTML = `
+    <div class="country-card">
+      <h2>Where shall we go? 🌍</h2>
+      <p>Pick a country and let's see what makes it special!</p>
 
-<p>Here's something you probably didn't expect!</p>
+      <button onclick="openAfghanistan()">
+        🇦🇫 Afghanistan
+      </button>
+    </div>
+  `;
+}
 
-<p>The carrots we know today have a fascinating history
-connected to Central Asia, especially Afghanistan.</p>
+function openAfghanistan() {
+  document.getElementById("adventure-message").innerHTML = `
+    <div class="country-card">
+      <img src="https://flagcdn.com/w80/af.png"
+           alt="Flag of Afghanistan" width="80">
 
-<p>And here's the twist: early cultivated carrots
-were purple and yellow, not orange!</p>
+      <h2>Salam from Afghanistan!</h2>
+      <p>There's a lot more to discover here than you might expect.</p>
 
-<p>So next time you're eating a carrot,
-remember that its story goes back to this part
-of the world. Pretty cool, right?</p>
-        `;
-         }
+      <div class="category-menu">
+        <button onclick="exploreCategory('food')">🍽️ Food</button>
+        <button onclick="exploreCategory('history')">🏛️ History</button>
+        <button onclick="exploreCategory('music')">🎵 Music</button>
+        <button onclick="exploreCategory('languages')">🗣️ Languages</button>
+        <button onclick="exploreCategory('facts')">💎 Surprising Facts</button>
+      </div>
+
+      <div id="category-content"></div>
+
+      <button onclick="startAdventure()">← Back to countries</button>
+    </div>
+  `;
+}
+
      
 function exploreCategory(category) {
   const content = document.getElementById("category-content");
