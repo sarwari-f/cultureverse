@@ -147,7 +147,7 @@ function showFood(food) {
   
   } else if (food === "bolani") {
     details.innerHTML = `
-      <h3>🫓 Bolani</h3>
+      <h3> Bolani</h3>
       <img src="images/Bolani.jpg"
            alt="Traditional Afghan Bolani"
            style="width:100%; max-width:350px; border-radius:15px;">
@@ -156,9 +156,22 @@ function showFood(food) {
 
       <p>Bolani is a popular street food in Afghanistan and is often enjoyed with yoghurt, chutney or a cup of Afghan tea. It is also served at family gatherings and celebrations.</p>
     `;
+  
+  } else if (food === "shorba") {
+    details.innerHTML = `
+      <h3> Afghan Shorba</h3>
+      <img src="images/Shorba.jpg"
+           alt="Traditional Afghan Shorba"
+           style="width:100%; max-width:350px; border-radius:15px;">
+
+      <p>Shorba is a traditional Afghan soup made with meat, potatoes, vegetables and aromatic spices. It is slowly cooked to create a rich, comforting broth.</p>
+
+      <p>Shorba is often enjoyed with fresh Afghan naan. It is a popular homemade meal, especially during colder weather and family gatherings.</p>
+    `;
   } else {
     details.innerHTML = `<h3>${food}</h3><p>More delicious discoveries coming soon!</p>`;
   }
+
 
 
 }
