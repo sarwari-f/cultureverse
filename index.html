@@ -52,7 +52,22 @@ remember that its story goes back to this part
 of the world. Pretty cool, right?</p>
         `;
          }
-        </script>
+     
+function exploreCategory(category) {
+  const content = document.getElementById("category-content");
+
+  const topics = {
+    food: "🍽️ Food: Let's discover Afghanistan's delicious dishes!",
+    history: "🏛️ History: Afghanistan has thousands of years of stories to tell.",
+    music: "🎵 Music: Let's explore Afghan instruments and musical traditions.",
+    languages: "🗣️ Languages: Discover the different languages spoken across Afghanistan.",
+    facts: "💎 Surprising Facts: Ready for something you didn't know?"
+  };
+
+  content.innerHTML = `<h3>${topics[category]}</h3>`;
+}
+   
+     </script>
 
  </body>
  </html>
