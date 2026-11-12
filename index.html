@@ -93,15 +93,30 @@ function openAfghanistan() {
 
      
 function exploreCategory(category) {
-  const content = document.getElementById("category-content");
+ 
+const topics = {
+  food: "🍲 Food & Cuisine",
+  dance: "💃 Dance",
+  music: "🎵 Music & Instruments",
+  literature: "📚 Literature & Poetry",
+  history: "🏛️ History",
+  geography: "🏞️ Geography & Nature",
+  cities: "🌆 Cities & Landmarks",
+  languages: "🗣️ Languages",
+  ethnicities: "👥 Ethnic Groups",
+  culture: "🎭 Culture & Traditions",
+  festivals: "🎉 Festivals & Celebrations",
+  clothing: "👗 Traditional Clothing",
+  people: "🌟 Famous People",
+  agriculture: "🍇 Fruits & Agriculture",
+  minerals: "💎 Minerals & Natural Resources",
+  trade: "📦 Imports & Exports",
+  art: "🎨 Art & Handicrafts",
+  heritage: "🏺 Archaeology & Heritage",
+  sports: "⚽ Sports & Games",
+  facts: "🤯 Surprising Facts"
+};
 
-  const topics = {
-    food: "🍽️ Food: Let's discover Afghanistan's delicious dishes!",
-    history: "🏛️ History: Afghanistan has thousands of years of stories to tell.",
-    music: "🎵 Music: Let's explore Afghan instruments and musical traditions.",
-    languages: "🗣️ Languages: Discover the different languages spoken across Afghanistan.",
-    facts: "💎 Surprising Facts: Ready for something you didn't know?"
-  };
 
   content.innerHTML = `<h3>${topics[category]}</h3>`;
 }
