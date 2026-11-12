@@ -42,26 +42,26 @@ function openAfghanistan() {
 
       <div class="category-menu">
         
-<button onclick="exploreCategory('food')">🍲 Food & Cuisine</button>
-<button onclick="exploreCategory('dance')">💃 Dance</button>
-<button onclick="exploreCategory('music')">🎵 Music & Instruments</button>
-<button onclick="exploreCategory('literature')">📚 Literature & Poetry</button>
-<button onclick="exploreCategory('history')">🏛️ History</button>
-<button onclick="exploreCategory('geography')">🗺️ Geography & Nature</button>
-<button onclick="exploreCategory('cities')">🏙️ Cities & Landmarks</button>
-<button onclick="exploreCategory('languages')">🗣️ Languages</button>
-<button onclick="exploreCategory('ethnicities')">👥 Ethnic Groups</button>
-<button onclick="exploreCategory('culture')">🎭 Culture & Traditions</button>
-<button onclick="exploreCategory('festivals')">🎉 Festivals & Celebrations</button>
-<button onclick="exploreCategory('clothing')">👗 Traditional Clothing</button>
-<button onclick="exploreCategory('people')">🌟 Famous People</button>
-<button onclick="exploreCategory('agriculture')">🍇 Fruits & Agriculture</button>
-<button onclick="exploreCategory('minerals')">💎 Minerals & Natural Resources</button>
-<button onclick="exploreCategory('trade')">📦 Imports & Exports</button>
-<button onclick="exploreCategory('art')">🎨 Art & Handicrafts</button>
-<button onclick="exploreCategory('heritage')">🏺 Archaeology & Heritage</button>
-<button onclick="exploreCategory('sports')">⚽ Sports & Games</button>
-<button onclick="exploreCategory('facts')">🤯 Surprising Facts</button>
+<button onclick="exploreCategory('food')"> Food & Cuisine</button>
+<button onclick="exploreCategory('dance')"> Dance</button>
+<button onclick="exploreCategory('music')"> Music & Instruments</button>
+<button onclick="exploreCategory('literature')"> Literature & Poetry</button>
+<button onclick="exploreCategory('history')"> History</button>
+<button onclick="exploreCategory('geography')"> Geography & Nature</button>
+<button onclick="exploreCategory('cities')"> Cities & Landmarks</button>
+<button onclick="exploreCategory('languages')"> Languages</button>
+<button onclick="exploreCategory('ethnicities')"> Ethnic Groups</button>
+<button onclick="exploreCategory('culture')"> Culture & Traditions</button>
+<button onclick="exploreCategory('festivals')"> Festivals & Celebrations</button>
+<button onclick="exploreCategory('clothing')"> Traditional Clothing</button>
+<button onclick="exploreCategory('people')"> Famous People</button>
+<button onclick="exploreCategory('agriculture')"> Fruits & Agriculture</button>
+<button onclick="exploreCategory('minerals')"> Minerals & Natural Resources</button>
+<button onclick="exploreCategory('trade')"> Imports & Exports</button>
+<button onclick="exploreCategory('art')"> Art & Handicrafts</button>
+<button onclick="exploreCategory('heritage')"> Archaeology & Heritage</button>
+<button onclick="exploreCategory('sports')"> Sports & Games</button>
+<button onclick="exploreCategory('facts')"> Surprising Facts</button>
 
       <div id="category-content"></div>
       </div>
@@ -76,26 +76,26 @@ function openAfghanistan() {
 function exploreCategory(category) {
   const content = document.getElementById("category-content"); 
   const topics = {
-  food: "🍲 Food & Cuisine",
-  dance: "💃 Dance",
-  music: "🎵 Music & Instruments",
-  literature: "📚 Literature & Poetry",
-  history: "🏛️ History",
-  geography: "🏞️ Geography & Nature",
-  cities: "🌆 Cities & Landmarks",
-  languages: "🗣️ Languages",
-  ethnicities: "👥 Ethnic Groups",
-  culture: "🎭 Culture & Traditions",
-  festivals: "🎉 Festivals & Celebrations",
-  clothing: "👗 Traditional Clothing",
-  people: "🌟 Famous People",
-  agriculture: "🍇 Fruits & Agriculture",
-  minerals: "💎 Minerals & Natural Resources",
-  trade: "📦 Imports & Exports",
-  art: "🎨 Art & Handicrafts",
-  heritage: "🏺 Archaeology & Heritage",
-  sports: "⚽ Sports & Games",
-  facts: "🤯 Surprising Facts"
+  food: " Food & Cuisine",
+  dance: " Dance",
+  music: " Music & Instruments",
+  literature: " Literature & Poetry",
+  history: " History",
+  geography: " Geography & Nature",
+  cities: " Cities & Landmarks",
+  languages: " Languages",
+  ethnicities: " Ethnic Groups",
+  culture: " Culture & Traditions",
+  festivals: " Festivals & Celebrations",
+  clothing: " Traditional Clothing",
+  people: " Famous People",
+  agriculture: " Fruits & Agriculture",
+  minerals: " Minerals & Natural Resources",
+  trade: " Imports & Exports",
+  art: " Art & Handicrafts",
+  heritage: " Archaeology & Heritage",
+  sports: " Sports & Games",
+  facts: " Surprising Facts"
 };
 
 
@@ -103,7 +103,7 @@ function exploreCategory(category) {
 
 if (category === "food") {
   content.innerHTML = `
-    <h3>🍲 Afghan Food & Cuisine</h3>
+    <h3> Afghan Food & Cuisine</h3>
     <p>Pick a dish to discover its story!</p>
 
     <div class="food-menu">
@@ -126,15 +126,28 @@ function showFood(food) {
 
   if (food === "mantu") {
     details.innerHTML = `
-      <h3>🥟 Mantu</h3>
+      <h3> Mantu</h3>
       <img src="images/Mantu.jpg"
            alt="Afghan Mantu dumplings"
            style="width:100%; max-width:350px; border-radius:15px;">
       <p>Steamed dumplings filled with seasoned meat and onions, usually served with yoghurt, garlic and a savoury sauce.</p>
     `;
+ 
+  } else if (food === "palaw") {
+    details.innerHTML = `
+      <h3> Qabili Palaw</h3>
+      <img src="images/QabiliPalaw.jpg"
+           alt="Traditional Afghan Qabili Palaw"
+           style="width:100%; max-width:350px; border-radius:15px;">
+
+      <p>Qabili Palaw is one of Afghanistan's most famous traditional dishes. It is made with fragrant rice, tender meat, sweet carrots, raisins and aromatic spices.</p>
+
+      <p>It is often served at weddings, family gatherings and special celebrations, and is a symbol of Afghan hospitality.</p>
+    `;
   } else {
     details.innerHTML = `<h3>${food}</h3><p>More delicious discoveries coming soon!</p>`;
   }
+
 }
 
      </script>
