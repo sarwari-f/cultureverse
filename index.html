@@ -118,8 +118,28 @@ const topics = {
 };
 
 
+ 
+if (category === "food") {
+  content.innerHTML = `
+    <h3>🍲 Discover Afghan Food</h3>
+    <p>Afghan cuisine has been shaped by centuries of trade, migration and cultural exchange across Central and South Asia.</p>
+
+    <h3>🥟 Mantu</h3>
+    <p>Delicate steamed dumplings filled with seasoned meat and onions, traditionally served with yoghurt, garlic and a lentil or tomato-based sauce.</p>
+
+    <h3>🍚 Qabili Palaw</h3>
+    <p>One of Afghanistan's best-known dishes: fragrant rice with tender meat, carrots, raisins and warming spices. It is especially popular at celebrations.</p>
+
+    <h3>🥬 Bolani</h3>
+    <p>A thin, stuffed flatbread filled with ingredients such as potatoes, leeks or pumpkin, then cooked until golden.</p>
+
+    <h3>🍜 Aush</h3>
+    <p>A comforting noodle soup with vegetables, herbs and beans, often topped with yoghurt and a savoury meat sauce.</p>
+  `;
+} else {
   content.innerHTML = `<h3>${topics[category]}</h3>`;
 }
+
    
      </script>
 
