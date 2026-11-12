@@ -23,3 +23,35 @@ p {
     max-width: 650px;
     margin: 20px auto;
 }
+
+/* A little colour and magic for CultureVerse */
+
+body {
+    background: linear-gradient(135deg, #fff0f6, #e8f5ff, #f3e8ff);
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 56px;
+    background: linear-gradient(90deg, #ff4d8d, #8055ff, #00b8d9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+button {
+    background: linear-gradient(90deg, #ff4d8d, #8055ff);
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 25px #8055ff40;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-4px) scale(1.05);
+}
