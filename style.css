@@ -80,3 +80,27 @@ button:hover {
     color: #e34b89;
     margin-top: 25px;
 }
+
+/* Afghanistan destination card */
+
+.country-card {
+    max-width: 620px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 12px 35px rgba(100, 70, 160, 0.15);
+    text-align: center;
+}
+
+.country-flag {
+    font-size: 48px;
+}
+
+.country-card h2 {
+    color: #8b4de8;
+}
+
+.country-card p {
+    line-height: 1.8;
+}
