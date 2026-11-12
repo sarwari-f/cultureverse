@@ -104,3 +104,8 @@ button:hover {
 .country-card p {
     line-height: 1.8;
 }
+.globe {
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: initial;
+}
