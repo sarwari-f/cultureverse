@@ -144,9 +144,22 @@ function showFood(food) {
 
       <p>It is often served at weddings, family gatherings and special celebrations, and is a symbol of Afghan hospitality.</p>
     `;
+  
+  } else if (food === "bolani") {
+    details.innerHTML = `
+      <h3>🫓 Bolani</h3>
+      <img src="images/Bolani.jpg"
+           alt="Traditional Afghan Bolani"
+           style="width:100%; max-width:350px; border-radius:15px;">
+
+      <p>Bolani is a traditional Afghan flatbread filled with ingredients such as potatoes, leeks, spinach or pumpkin. It is usually pan-fried until golden and crispy.</p>
+
+      <p>Bolani is a popular street food in Afghanistan and is often enjoyed with yoghurt, chutney or a cup of Afghan tea. It is also served at family gatherings and celebrations.</p>
+    `;
   } else {
     details.innerHTML = `<h3>${food}</h3><p>More delicious discoveries coming soon!</p>`;
   }
+
 
 }
 
